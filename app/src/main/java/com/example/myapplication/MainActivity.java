@@ -12,6 +12,7 @@ import android.app.Activity;
 import android.os.Bundle;
 //import android.support.v4.app.ActivityCompat;
 //import android.test.mock.MockPackageManager;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -81,6 +82,7 @@ public class MainActivity extends Activity {
             byte[] bytes = new byte[fin.available()];
             fin.read(bytes);
             String text = new String (bytes);
+            textView.setMovementMethod(new ScrollingMovementMethod());
             textView.setText(text);
         }
         catch(IOException ex) {

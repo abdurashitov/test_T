@@ -52,6 +52,7 @@ public class MyService extends Service {
                                 gps.showSettingsAlert();
                             }
                             TimeUnit.SECONDS.sleep(e);
+                            gps.getLocation();
                             System.out.println("slepp");
                             someTask();
                         }
