@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="getlocation" />
+
+    <Button
+        android:id="@+id/service_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="service_on"
+        android:text="вкл" />
+
+    <Button
+        android:id="@+id/service_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="service_off"
+        android:text="выкл" />
+
+    <TextView
+        android:id="@+id/open_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_weight="4"
+        android:gravity="start" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="openText"
+        android:text="Открыть" />
+</LinearLayout>
